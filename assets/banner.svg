@@ -1,53 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%" style="border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
   <defs>
-    <!-- Background Gradients -->
+    <!-- Background Tech Gradients -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070c18" />
+      <stop offset="0%" stop-color="#080d1a" />
       <stop offset="50%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#081021" />
+      <stop offset="100%" stop-color="#091124" />
     </linearGradient>
 
-    <radialGradient id="mesh-glow-1" cx="20%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#070c18" stop-opacity="0" />
+    <radialGradient id="mesh-glow-left" cx="15%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#080d1a" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="mesh-glow-2" cx="80%" cy="70%" r="50%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#070c18" stop-opacity="0" />
+    <radialGradient id="mesh-glow-right" cx="85%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#080d1a" stop-opacity="0" />
     </radialGradient>
 
+    <!-- Title Gradient -->
     <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
-    <linearGradient id="card-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2" />
-    </linearGradient>
-
-    <linearGradient id="pulse-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Pipeline Pulse Gradient -->
+    <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ef4444" />
-      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="45%" stop-color="#f59e0b" />
+      <stop offset="75%" stop-color="#06b6d4" />
       <stop offset="100%" stop-color="#10b981" />
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.4" />
-      <circle cx="40" cy="40" r="1" fill="#334155" fill-opacity="0.5" />
+    <!-- Card Border Gradient -->
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Background Grid Pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.5" />
+      <circle cx="40" cy="40" r="1" fill="#334155" fill-opacity="0.6" />
     </pattern>
-
-    <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
-    </filter>
   </defs>
 
   <style>
@@ -57,102 +53,108 @@
     }
     @keyframes pulseOrb {
       0%, 100% { transform: scale(1); opacity: 0.6; }
-      50% { transform: scale(1.15); opacity: 0.95; }
+      50% { transform: scale(1.3); opacity: 1; }
     }
-    @keyframes floatCard1 {
+    @keyframes floatCardA {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-7px); }
+      50% { transform: translateY(-6px); }
     }
-    @keyframes floatCard2 {
+    @keyframes floatCardB {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(6px); }
     }
-    @keyframes shimmer {
-      0% { opacity: 0.3; }
-      50% { opacity: 0.8; }
-      100% { opacity: 0.3; }
+    .flow-stream {
+      stroke-dasharray: 14 10;
+      animation: flowCycle 10s linear infinite;
     }
-    .flow-line {
-      stroke-dasharray: 12 8;
-      animation: flowCycle 8s linear infinite;
+    .flow-stream-fast {
+      stroke-dasharray: 10 6;
+      animation: flowCycle 6s linear infinite;
     }
-    .floating-chip-1 {
-      animation: floatCard1 5s ease-in-out infinite;
+    .float-chip-1 {
+      animation: floatCardA 4.5s ease-in-out infinite;
     }
-    .floating-chip-2 {
-      animation: floatCard2 6s ease-in-out infinite;
+    .float-chip-2 {
+      animation: floatCardB 5.5s ease-in-out infinite;
     }
-    .pulse-ring {
+    .beacon-pulse {
       transform-origin: center;
-      animation: pulseOrb 3.5s ease-in-out infinite;
-    }
-    .shimmer-text {
-      animation: shimmer 4s ease-in-out infinite;
+      animation: pulseOrb 2.8s ease-in-out infinite;
     }
   </style>
 
-  <!-- Background Base -->
-  <rect width="1200" height="380" fill="url(#bg-grad)" rx="12" />
-  <rect width="1200" height="380" fill="url(#grid)" rx="12" />
-  <rect width="1200" height="380" fill="url(#mesh-glow-1)" rx="12" />
-  <rect width="1200" height="380" fill="url(#mesh-glow-2)" rx="12" />
+  <!-- 1. Background Layers -->
+  <rect width="1200" height="380" fill="url(#bg-grad)" rx="14" />
+  <rect width="1200" height="380" fill="url(#grid-pattern)" rx="14" />
+  <rect width="1200" height="380" fill="url(#mesh-glow-left)" rx="14" />
+  <rect width="1200" height="380" fill="url(#mesh-glow-right)" rx="14" />
 
-  <!-- Animated Pipeline Flow (Background Canvas) -->
+  <!-- 2. Dynamic Pipeline Animations (Background Track) -->
   <g opacity="0.45">
-    <!-- Curved transaction lifeline -->
-    <path class="flow-line" d="M 80,310 C 300,310 400,340 600,330 C 800,320 950,290 1120,310" fill="none" stroke="url(#pulse-grad)" stroke-width="2.5" />
-    <path class="flow-line" d="M 120,60 C 350,70 500,40 700,55 C 900,70 1000,50 1100,65" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.6" />
+    <!-- Payment recovery flow path -->
+    <path class="flow-stream" d="M 60,300 C 240,300 380,345 600,330 C 820,315 960,280 1140,295" fill="none" stroke="url(#flow-grad)" stroke-width="2.5" />
+    <path class="flow-stream-fast" d="M 80,75 C 320,85 500,45 720,65 C 920,80 1020,55 1120,70" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.6" />
   </g>
 
-  <!-- Floating Dynamic Feature Chips (Kept safely at top/sides/bottom away from text) -->
-  <g class="floating-chip-1" transform="translate(850, 42)">
-    <rect width="270" height="42" rx="21" fill="#1e293b" fill-opacity="0.85" stroke="url(#card-border-grad)" stroke-width="1.2" filter="url(#soft-shadow)" />
-    <circle cx="24" cy="21" r="7" fill="#10b981" />
-    <circle cx="24" cy="21" r="11" fill="#10b981" fill-opacity="0.25" class="pulse-ring" />
-    <text x="42" y="26" fill="#f1f5f9" font-size="13" font-weight="600">Failed Payment Recovered: +18.4%</text>
+  <!-- 3. Dynamic Peripheral Feature Chips -->
+  <!-- Top-Right: Revenue Recovery metric chip -->
+  <g class="float-chip-1" transform="translate(860, 36)">
+    <rect width="280" height="42" rx="21" fill="#131d36" fill-opacity="0.9" stroke="url(#card-border)" stroke-width="1.2" />
+    <circle cx="24" cy="21" r="6" fill="#10b981" />
+    <circle cx="24" cy="21" r="10" fill="#10b981" fill-opacity="0.3" class="beacon-pulse" />
+    <text x="44" y="26" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Recovered Revenue: +18.4%</text>
   </g>
 
-  <g class="floating-chip-2" transform="translate(70, 318)">
-    <rect width="250" height="38" rx="19" fill="#1e293b" fill-opacity="0.85" stroke="url(#card-border-grad)" stroke-width="1.2" filter="url(#soft-shadow)" />
-    <circle cx="22" cy="19" r="6" fill="#38bdf8" />
-    <text x="38" y="24" fill="#94a3b8" font-size="12" font-weight="600">⚡ Smart AI Retries &amp; Dunning</text>
+  <!-- Bottom-Left: Smart Retries chip -->
+  <g class="float-chip-2" transform="translate(60, 318)">
+    <rect width="250" height="38" rx="19" fill="#131d36" fill-opacity="0.9" stroke="url(#card-border)" stroke-width="1.2" />
+    <circle cx="22" cy="19" r="5" fill="#38bdf8" />
+    <text x="38" y="24" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">⚡ Smart Retries &amp; Dunning</text>
   </g>
 
-  <g class="floating-chip-1" transform="translate(890, 318)">
-    <rect width="240" height="38" rx="19" fill="#1e293b" fill-opacity="0.85" stroke="url(#card-border-grad)" stroke-width="1.2" filter="url(#soft-shadow)" />
-    <circle cx="22" cy="19" r="6" fill="#a855f7" />
-    <text x="38" y="24" fill="#cbd5e1" font-size="12" font-weight="600">📉 Involuntary Churn: Deflected</text>
+  <!-- Bottom-Right: Involuntary Churn Deflected chip -->
+  <g class="float-chip-1" transform="translate(890, 318)">
+    <rect width="250" height="38" rx="19" fill="#131d36" fill-opacity="0.9" stroke="url(#card-border)" stroke-width="1.2" />
+    <circle cx="22" cy="19" r="5" fill="#c084fc" />
+    <text x="38" y="24" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">📉 Involuntary Churn Deflected</text>
   </g>
 
-  <!-- FOREGROUND HERO CONTENT (Guaranteed never covered) -->
-  <g transform="translate(600, 185)" text-anchor="middle">
-    <!-- Eyebrow Tag / Pill -->
-    <g transform="translate(-190, -96)">
-      <rect width="380" height="28" rx="14" fill="#312e81" fill-opacity="0.8" stroke="#6366f1" stroke-width="1" />
-      <text x="190" y="19" text-anchor="middle" fill="#a5b4fc" font-size="11" font-weight="700" letter-spacing="1.5">✦ REVENUE RETENTION &amp; DUNNING AGENTS ✦</text>
+  <!-- 4. Foreground Hero Typography & Content (Guaranteed 100% Uncovered & High-Contrast) -->
+  <g transform="translate(600, 190)" text-anchor="middle">
+    <!-- Eyebrow Pill -->
+    <g transform="translate(-190, -100)">
+      <rect width="380" height="28" rx="14" fill="#1e1b4b" fill-opacity="0.85" stroke="#6366f1" stroke-width="1.2" />
+      <text x="190" y="19" text-anchor="middle" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">✦ REVENUE RETENTION &amp; DUNNING AGENTS ✦</text>
     </g>
 
-    <!-- Main Title with Gradient and High Contrast -->
-    <text x="0" y="-20" fill="url(#title-grad)" font-size="36" font-weight="800" letter-spacing="-0.5" filter="url(#soft-shadow)">
+    <!-- Main Title -->
+    <text x="0" y="-22" fill="url(#title-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.5">
       Awesome Subscription Invoicing &amp; Churn Recovery
     </text>
 
-    <!-- Subtitle / Mission Statement -->
-    <text x="0" y="20" fill="#f8fafc" font-size="17" font-weight="600" opacity="0.95" letter-spacing="0.2">
+    <!-- Subtitle -->
+    <text x="0" y="20" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" opacity="0.95" letter-spacing="0.2">
       Autonomous Dunning Agents, Smart Retries &amp; Open-Source Billing Engines
     </text>
 
-    <!-- Feature Pillars List in Center -->
-    <g transform="translate(0, 56)">
-      <text x="0" y="0" fill="#94a3b8" font-size="13" font-weight="500">
-        <tspan fill="#38bdf8" font-weight="700">✓</tspan> Smart Payment Retries &nbsp;&nbsp;|&nbsp;&nbsp;
-        <tspan fill="#818cf8" font-weight="700">✓</tspan> Automated Dunning Sequences &nbsp;&nbsp;|&nbsp;&nbsp;
-        <tspan fill="#c084fc" font-weight="700">✓</tspan> Self-Hosted Billing &nbsp;&nbsp;|&nbsp;&nbsp;
-        <tspan fill="#34d399" font-weight="700">✓</tspan> Churn Reduction
+    <!-- Feature Pillars -->
+    <g transform="translate(0, 58)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">
+      <text x="0" y="0">
+        <tspan fill="#38bdf8" font-weight="700">✓</tspan>
+        <tspan fill="#94a3b8"> Smart Payment Retries</tspan>
+        <tspan fill="#475569">   •   </tspan>
+        <tspan fill="#818cf8" font-weight="700">✓</tspan>
+        <tspan fill="#94a3b8"> Automated Dunning</tspan>
+        <tspan fill="#475569">   •   </tspan>
+        <tspan fill="#c084fc" font-weight="700">✓</tspan>
+        <tspan fill="#94a3b8"> Self-Hosted Billing</tspan>
+        <tspan fill="#475569">   •   </tspan>
+        <tspan fill="#34d399" font-weight="700">✓</tspan>
+        <tspan fill="#94a3b8"> Churn Reduction</tspan>
       </text>
     </g>
   </g>
 
-  <!-- Sleek Border Frame -->
-  <rect width="1198" height="378" x="1" y="1" rx="11" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" />
+  <!-- 5. Sleek Border Frame -->
+  <rect width="1198" height="378" x="1" y="1" rx="13" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" />
 </svg>

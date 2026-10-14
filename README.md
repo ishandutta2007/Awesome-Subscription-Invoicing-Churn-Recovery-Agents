@@ -1,6 +1,6 @@
 <div align="center">
 
-![Awesome Subscription Invoicing & Churn Recovery Agents](assets/banner.svg)
+<img src="assets/banner.svg" alt="Awesome Subscription Invoicing & Churn Recovery Agents" width="100%" />
 
 # 🚀 Awesome Subscription Invoicing & Churn Recovery Agents
 

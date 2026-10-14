@@ -91,100 +91,100 @@ The following SaaS platforms provide hosted dunning automation, algorithmic paym
 
 Explore battle-tested open-source billing engines, payment switches, dunning orchestrators, and cancel-survey frameworks.
 
-> **Sorted by GitHub Stars Descending**  
-> *Click the social star badge next to each project to view its real-time stargazers!*
+> **Sorted by GitHub_Stars Descending**  
+> *Click the social Stars_Badge next to each project to view its real-time stargazers!*
 
-### 1. 🌟 [Hyperswitch](https://github.com/juspay/hyperswitch) [![GitHub stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers)
+### 1. 🌟 [Hyperswitch](https://github.com/juspay/hyperswitch) [![GitHub_Stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers)
 - **Primary Language**: Rust 🦀
 - **License**: Apache-2.0
 - **Focus**: High-Performance Payment Switch, Smart Routing & Multi-Gateway Failover
 - **Description**: A lightning-fast, modular open-source financial switch. Enables SaaS teams to route payments across 50+ gateways (Stripe, Adyen, Braintree, Checkout.com, Razorpay), automatically reroute soft declines to fallback processors, retry failed recurring payments, and maintain unified customer subscription vaults with zero vendor lock-in.
 
-### 2. 📋 [Formbricks](https://github.com/formbricks/formbricks) [![GitHub stars](https://img.shields.io/github/stars/formbricks/formbricks?style=social&color=white)](https://github.com/formbricks/formbricks/stargazers)
+### 2. 📋 [Formbricks](https://github.com/formbricks/formbricks) [![GitHub_Stars](https://img.shields.io/github/stars/formbricks/formbricks?style=social&color=white)](https://github.com/formbricks/formbricks/stargazers)
 - **Primary Language**: TypeScript / Next.js ⚛️
 - **License**: AGPL-3.0
 - **Focus**: Experience Management, In-App Exit Surveys & Cancel Flow Optimization
 - **Description**: The open-source alternative to Churnkey and Qualtrics for voluntary churn deflection. Allows engineering and growth teams to embed customizable cancellation surveys directly into their React/Next.js apps, dynamically offer discounts or subscription pause options before user churn, and trigger retention webhook workflows.
 
-### 3. ⚡ [Lago](https://github.com/getlago/lago) [![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
+### 3. ⚡ [Lago](https://github.com/getlago/lago) [![GitHub_Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
 - **Primary Language**: Ruby / Go 💎
 - **License**: AGPL-3.0
 - **Focus**: Open-Source Metering, Usage-Based Billing & Dunning Workflows
 - **Description**: A transparent, developer-first alternative to Stripe Billing and Chargebee. Ingests high-frequency consumption events, calculates complex tiered/hybrid billing models, generates localized PDF invoices, and executes automated payment retries with configurable dunning webhook notifications when card charges fail.
 
-### 4. 🧾 [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) [![GitHub stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers)
+### 4. 🧾 [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) [![GitHub_Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers)
 - **Primary Language**: PHP (Laravel) / Flutter 📱
 - **License**: Functional Source License / Fair Code
 - **Focus**: Self-Hosted Invoicing, Recurring Subscriptions & Automated Reminders
 - **Description**: One of the most mature self-hosted billing engines on GitHub. Supports recurring auto-billing, client-facing payment portals, automated multi-stage dunning reminders (First Notice, Overdue, Final Notice), multi-gateway integration (PayPal, Stripe, Mollie, Authorize.Net), and automated credit card charging.
 
-### 5. 📑 [Crater](https://github.com/crater-invoice-inc/crater) [![GitHub stars](https://img.shields.io/github/stars/crater-invoice-inc/crater?style=social&color=white)](https://github.com/crater-invoice-inc/crater/stargazers)
+### 5. 📑 [Crater](https://github.com/crater-invoice-inc/crater) [![GitHub_Stars](https://img.shields.io/github/stars/crater-invoice-inc/crater?style=social&color=white)](https://github.com/crater-invoice-inc/crater/stargazers)
 - **Primary Language**: PHP (Laravel) / Vue.js 🚀
 - **License**: MIT
 - **Focus**: Clean Self-Hosted Invoicing & Automated Late Payment Reminders
 - **Description**: A modern, mobile-friendly invoicing suite designed for freelancers, agencies, and small SaaS companies. Includes automated recurring invoices, detailed payment status tracking (Sent, Viewed, Partial, Paid, Overdue), payment gateway webhooks, and automated email payment reminders.
 
-### 6. ⚔️ [Kill Bill](https://github.com/killbill/killbill) [![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
+### 6. ⚔️ [Kill Bill](https://github.com/killbill/killbill) [![GitHub_Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
 - **Primary Language**: Java ☕
 - **License**: Apache-2.0
 - **Focus**: Enterprise Open-Source Subscription Billing & Modular Overdue Engine
 - **Description**: The enterprise gold standard for open-source recurring billing. Features an advanced **Overdue / Dunning State Machine** allowing operators to configure deterministic grace periods, automatic service downgrades, payment retry intervals, and custom plugin hooks for custom notification channels. Used by multinational telecom, streaming, and enterprise SaaS companies.
 
-### 7. 📦 [Stripe Node.js SDK](https://github.com/stripe/stripe-node) [![GitHub stars](https://img.shields.io/github/stars/stripe/stripe-node?style=social&color=white)](https://github.com/stripe/stripe-node/stargazers)
+### 7. 📦 [Stripe Node.js SDK](https://github.com/stripe/stripe-node) [![GitHub_Stars](https://img.shields.io/github/stars/stripe/stripe-node?style=social&color=white)](https://github.com/stripe/stripe-node/stargazers)
 - **Primary Language**: TypeScript / JavaScript 🌐
 - **License**: MIT
 - **Focus**: Official Stripe API Library for Subscription Lifecycle Orchestration
 - **Description**: The foundational SDK used by tens of thousands of SaaS companies to orchestrate subscription billing, catch `invoice.payment_failed` and `customer.subscription.updated` events, create hosted Billing Customer Portal sessions, and automate custom in-house recovery sequences.
 
-### 8. 🍂 [Autumn](https://github.com/useautumn/autumn) [![GitHub stars](https://img.shields.io/github/stars/useautumn/autumn?style=social&color=white)](https://github.com/useautumn/autumn/stargazers)
+### 8. 🍂 [Autumn](https://github.com/useautumn/autumn) [![GitHub_Stars](https://img.shields.io/github/stars/useautumn/autumn?style=social&color=white)](https://github.com/useautumn/autumn/stargazers)
 - **Primary Language**: TypeScript / Node.js 💻
 - **License**: MIT
 - **Focus**: Pricing-as-a-Service & Self-Healing Billing Abstraction Layer
 - **Description**: Sits between your application code and payment gateway (Stripe). Exposes three streamlined primitives (`/attach`, `/check`, `/track`) to handle complex pricing tiers, credit systems, and entitlement verification, while automatically executing recovery workflows when recurring subscription invoices enter a past-due state.
 
-### 9. 🐘 [Laravel Cashier](https://github.com/laravel/cashier-stripe) [![GitHub stars](https://img.shields.io/github/stars/laravel/cashier-stripe?style=social&color=white)](https://github.com/laravel/cashier-stripe/stargazers)
+### 9. 🐘 [Laravel Cashier](https://github.com/laravel/cashier-stripe) [![GitHub_Stars](https://img.shields.io/github/stars/laravel/cashier-stripe?style=social&color=white)](https://github.com/laravel/cashier-stripe/stargazers)
 - **Primary Language**: PHP (Laravel) 🐘
 - **License**: MIT
 - **Focus**: Expressive Subscription Billing, Invoicing & Automated Dunning for Laravel
 - **Description**: The official Laravel package for Stripe billing. Handles subscription management, coupon redemption, automated receipt generation, failed charge webhook handling, customer billing portal redirects, and customizable dunning email notifications out-of-the-box. Also available for Paddle (`laravel/cashier-paddle`).
 
-### 10. 📊 [OpenMeter](https://github.com/openmeterio/openmeter) [![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers)
+### 10. 📊 [OpenMeter](https://github.com/openmeterio/openmeter) [![GitHub_Stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers)
 - **Primary Language**: Go 🐹
 - **License**: Apache-2.0
 - **Focus**: Real-Time Metering & Consumption Engine for AI, APIs & DevOps Billing
 - **Description**: Cloud-native usage aggregation engine built on Apache Kafka and ClickHouse. Tracks real-time token/API consumption, enforces customer credit limits, and immediately alerts billing engines when accounts hit overdue balances or quota exhaustion to prevent unpaid usage leakage.
 
-### 11. 💻 [Stripe CLI](https://github.com/stripe/stripe-cli) [![GitHub stars](https://img.shields.io/github/stars/stripe/stripe-cli?style=social&color=white)](https://github.com/stripe/stripe-cli/stargazers)
+### 11. 💻 [Stripe CLI](https://github.com/stripe/stripe-cli) [![GitHub_Stars](https://img.shields.io/github/stars/stripe/stripe-cli?style=social&color=white)](https://github.com/stripe/stripe-cli/stargazers)
 - **Primary Language**: Go 🐹
 - **License**: Apache-2.0
 - **Focus**: Local Webhook Testing, Dunning Simulation & Subscription Event Mocking
 - **Description**: An indispensable development and debugging tool that streams Stripe events directly to local development machines. Essential for testing dunning handlers by triggering simulated `charge.failed`, `invoice.payment_action_required`, and card decline webhooks without needing public staging endpoints.
 
-### 12. 🐍 [dj-stripe](https://github.com/dj-stripe/dj-stripe) [![GitHub stars](https://img.shields.io/github/stars/dj-stripe/dj-stripe?style=social&color=white)](https://github.com/dj-stripe/dj-stripe/stargazers)
+### 12. 🐍 [dj-stripe](https://github.com/dj-stripe/dj-stripe) [![GitHub_Stars](https://img.shields.io/github/stars/dj-stripe/dj-stripe?style=social&color=white)](https://github.com/dj-stripe/dj-stripe/stargazers)
 - **Primary Language**: Python (Django) 🐍
 - **License**: MIT
 - **Focus**: Django Model Mirror for Stripe Subscriptions, Webhooks & Invoices
 - **Description**: Automatically synchronizes all Stripe subscription objects, invoices, customer payment methods, and charges directly into local Django models. Makes building custom in-house dunning logic, grace period enforcement, and failed payment alerts effortless within Python web applications.
 
-### 13. 🦀 [Meteroid](https://github.com/meteroid-oss/meteroid) [![GitHub stars](https://img.shields.io/github/stars/meteroid-oss/meteroid?style=social&color=white)](https://github.com/meteroid-oss/meteroid/stargazers)
+### 13. 🦀 [Meteroid](https://github.com/meteroid-oss/meteroid) [![GitHub_Stars](https://img.shields.io/github/stars/meteroid-oss/meteroid?style=social&color=white)](https://github.com/meteroid-oss/meteroid/stargazers)
 - **Primary Language**: Rust 🦀
 - **License**: AGPL-3.0
 - **Focus**: High-Performance Pricing Infrastructure & Subscription Recovery
 - **Description**: Built in Rust for sub-millisecond event processing and scalable subscription architectures. Features automated invoice generation, dynamic tax compliance, multi-currency pricing plans, and pluggable retry/recovery rules for soft credit card rejections.
 
-### 14. 🎯 [Tier](https://github.com/tierrun/tier) [![GitHub stars](https://img.shields.io/github/stars/tierrun/tier?style=social&color=white)](https://github.com/tierrun/tier/stargazers)
+### 14. 🎯 [Tier](https://github.com/tierrun/tier) [![GitHub_Stars](https://img.shields.io/github/stars/tierrun/tier?style=social&color=white)](https://github.com/tierrun/tier/stargazers)
 - **Primary Language**: Go 🐹
 - **License**: Apache-2.0
 - **Focus**: Pricing-as-Code SDK & Automated Entitlement Enforcement
 - **Description**: Manage SaaS subscription pricing models directly from a single `pricing.json` file. Unifies Stripe plan synchronization, feature gating, and payment status checks with clear error states when a customer’s payment method fails.
 
-### 15. 🐻 [BillaBear](https://github.com/billabear/billabear) [![GitHub stars](https://img.shields.io/github/stars/billabear/billabear?style=social&color=white)](https://github.com/billabear/billabear/stargazers)
+### 15. 🐻 [BillaBear](https://github.com/billabear/billabear) [![GitHub_Stars](https://img.shields.io/github/stars/billabear/billabear?style=social&color=white)](https://github.com/billabear/billabear/stargazers)
 - **Primary Language**: PHP (Symfony) 🛠️
 - **License**: Functional Source License (FSL)
 - **Focus**: Self-Hosted Subscription Management & Dunning Email Workflows
 - **Description**: Complete self-hosted billing engine with native Stripe support. Includes automated dunning sequences, customer churn reports (LTV, MRR, churn rate), multi-currency invoices, EU VAT / tax automation, and self-service payment update widgets.
 
-### 16. 🌐 [Open Payment Host](https://github.com/abishekmuthian/open-payment-host) [![GitHub stars](https://img.shields.io/github/stars/abishekmuthian/open-payment-host?style=social&color=white)](https://github.com/abishekmuthian/open-payment-host/stargazers)
+### 16. 🌐 [Open Payment Host](https://github.com/abishekmuthian/open-payment-host) [![GitHub_Stars](https://img.shields.io/github/stars/abishekmuthian/open-payment-host?style=social&color=white)](https://github.com/abishekmuthian/open-payment-host/stargazers)
 - **Primary Language**: Go 🐹
 - **License**: AGPL-3.0
 - **Focus**: Self-Hosted Multi-Gateway Payment Host & Retry Logic
@@ -223,7 +223,7 @@ We actively welcome contributions from billing engineers, FinTech developers, an
 
 1. 🍴 **Fork the Repository**: Click Fork on the top right.
 2. 🌿 **Create a Branch**: `git checkout -b feature/add-new-recovery-agent`
-3. 📝 **Add Your Entry**: Ensure SaaS entries include verified starting tier pricing and specific free trial terms. Ensure open-source entries include the shields.io social star badge linked to the repo's stargazers page.
+3. 📝 **Add Your Entry**: Ensure SaaS entries include verified starting tier pricing and specific free trial terms. Ensure open-source entries include the shields.io social Stars_Badge linked to the repo's stargazers page.
 4. 📬 **Submit a PR**: Provide a factual, neutral description and relevant links.
 
 ---

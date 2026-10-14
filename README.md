@@ -1,6 +1,6 @@
 # Awesome-Subscription-Invoicing-Churn-Recovery-Agents
 
-# Top Subscription Invoicing & Churn Recovery Agents Ecosystem
+## Top Subscription Invoicing & Churn Recovery Agents Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Dunning Automation, Involuntary Churn Reduction & Failed Payment Recovery*  
